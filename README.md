@@ -63,51 +63,6 @@ Lá você encontrará um arquivo `zabbix.icones.zip` com o pacote completo de í
 ## Segurança
 
 - O script solicita a senha de forma interativa e **não** grava a senha em arquivo.
-- Não versione senhas, tokens ou outras informações sensíveis neste repositório.
-- Se você criar arquivos de configuração com credenciais, lembre-se de adicioná-los ao `.gitignore`.
+- Não versione senhas, tokens ou outras informações sensíveis em repositórios.
 
-## Estrutura sugerida do repositório
-
-```text
-Importar-Incones-para-o-Zabbix/
-  importa_icones_zabbix.sh
-  README.md
-```
-
-Se desejar, você pode manter neste repositório apenas o script e um README, e gerenciar a pasta real de ícones (`DIR`) apenas no servidor.
-
-## Publicar este projeto no GitHub
-
-Abaixo um exemplo de sequência de comandos para versionar este projeto e enviar para o GitHub a partir do Windows (PowerShell), assumindo que você está na pasta do projeto:
-
-```powershell
-cd "d:\Documentos\Cursor\Importar-Incones-para-o-Zabbix"
-
-# Se ainda não for um repositório git
-git init
-
-# Verificar o estado atual
-git status
-
-# Adicionar arquivos principais
-git add importa_icones_zabbix.sh README.md
-
-# Criar o commit inicial
-git commit -m "Importador de ícones PNG para Zabbix via API"
-```
-
-Em seguida, crie um repositório vazio no GitHub (por exemplo, `zabbix-importa-icones`) e conecte o repositório local ao remoto:
-
-```powershell
-# Ajuste SEU_USUARIO e o nome do repositório
-git remote add origin https://github.com/SEU_USUARIO/zabbix-importa-icones.git
-
-# Opcional: renomear o branch local para main
-git branch -M main
-
-# Enviar o commit inicial para o GitHub
-git push -u origin main
-```
-
-Depois disso, o script e o README estarão disponíveis no seu repositório GitHub para outras pessoas adaptarem à própria instalação de Zabbix.
 
