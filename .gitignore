@@ -1,0 +1,21 @@
+# Arquivos temporários de editor
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração sensíveis (exemplos)
+.env
+*.secret
+*.secrets.json
+
+# Caso você tenha scripts ou arquivos de testes temporários
+tmp/
+*.tmp
+
