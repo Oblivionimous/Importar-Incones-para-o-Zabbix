@@ -40,7 +40,7 @@ LOGIN_RESPONSE=$(curl -s -X POST -H "Content-Type: application/json" -d "{
 AUTH=$(echo "$LOGIN_RESPONSE" | grep -oP '"result":"\K[^"]+')
 
 if [ -z "$AUTH" ]; then
-    echo "❌ Erro no login:"
+    echo "Erro no login:"
     echo "$LOGIN_RESPONSE"
     exit 1
 fi
@@ -75,9 +75,9 @@ for file in "$DIR"/*.png; do
         "$ZABBIX_URL")
 
     if echo "$RESPONSE" | grep -q '"error"'; then
-        echo "⚠ $NAME já existe ou erro ocorreu"
+        echo "$NAME já existe ou erro ocorreu"
     else
-        echo "✔ Importado com sucesso"
+        echo "Importado com sucesso"
     fi
 
 done
