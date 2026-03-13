@@ -58,6 +58,7 @@ Lá você encontrará um arquivo `zabbix.icones.zip` com o pacote completo de í
    ./importa_icones_zabbix.sh
    ```
 
+
 5. Informe **usuário** e **senha** do Zabbix quando o script solicitar. Os ícones `.png` da pasta configurada serão enviados um a um para o Zabbix via método `image.create` da API.
 
 ## Segurança
